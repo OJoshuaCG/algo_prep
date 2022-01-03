@@ -1,0 +1,11 @@
+/*
+Bubble Sort (Descending)
+Avg. Time complexity: O(n²)
+*/
+
+for ( index = 0 to input.length-1 ) {
+	for ( j = 0 to j < input.length-1-index ) {
+    	if ( input[ j ] < input[ j+1 ] )
+			swap input[ j+1 ] & input[ j ]
+	}
+}

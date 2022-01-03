@@ -1,0 +1,16 @@
+/*
+Graph Traversals
+DFS (Deep First Search)
+*/
+
+dfs ( GraphNode node ) {
+    node.visited = true
+
+    Print node.value
+
+    for ( Node neighbor in node.getNeighbors() )
+        if ( neighbor.visited != true )
+            dfs ( neighbor )
+    }
+}
+

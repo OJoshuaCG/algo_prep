@@ -1,0 +1,16 @@
+/*
+Tree Traversals 
+Pre order
+*/
+
+preOrder ( TreeNode node ) {
+    if ( node == null )
+        return
+
+    Print node.value
+
+    preOrder ( node.left )
+
+    preOrder ( node.right )
+}
+

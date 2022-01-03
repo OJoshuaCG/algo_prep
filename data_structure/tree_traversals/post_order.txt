@@ -1,0 +1,16 @@
+/*
+Tree Traversals 
+Post order
+*/
+
+postOrder ( TreeNode node ) {
+    if ( node == null )
+        return
+
+    postOrder ( node.left )
+
+    postOrder ( node.right )
+
+    Print node.value
+}
+

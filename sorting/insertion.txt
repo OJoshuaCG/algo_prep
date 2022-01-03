@@ -1,0 +1,28 @@
+/*
+Insertion sort (Ascending)
+Avg. Time complexity: O(n²)
+*/
+
+for ( i = 0 to i = input.length-1 ) {
+	int temp = input[ i ]
+	boolean hasMoved = false
+	boolean notPlaced = true
+
+	for ( j = i-1 to j = 0 ) {
+		if ( input[ j ] > temp ) {
+			//  Shift numbers till you find it’s right location 
+			input[ j+1 ] = input[ j ]
+			hasMoved = true
+		} else {
+			input[ j+1 ] = temp
+			notPlaced = false
+			break;
+		}
+	}
+
+	// Edge case 
+	if( hasMoved && notPlaced )
+		input[0] = temp 
+
+}
+

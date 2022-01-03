@@ -1,0 +1,22 @@
+/*
+Graph Traversals
+BFS (Breadth First Search)
+*/
+
+bfs ( GraphNode node ) {
+    Queue q = new Queue()
+
+    q.enqueue ( node )
+
+    while ( !q.isEmpty() ) {
+        node = q.dequeue()
+
+        // Mark node as visited 
+        Print node.value
+
+        for ( Node neighbor in node.getNeighbors() )
+            if ( neighbor.visited != true )
+                q.enqueue ( neighbor )
+    }
+}
+

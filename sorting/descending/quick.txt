@@ -1,0 +1,31 @@
+/*
+Quick Sort (Descending)
+Avg. Time complexity: O(n log n)
+*/
+
+quicksort ( int[] input, int left, int right ) {
+	if ( right - left <= 0 )
+		return;
+
+	int pivot = input[ ( left + right ) / 2 ];
+	int i = left,  j = right;
+
+	while ( i <= j ) {
+		while ( input[ i ] > pivot )
+			i++
+
+		while ( input[ j ] < pivot )
+			j--;
+
+		if (j >= i) {
+			swap input[ i ] & input[ j ]
+			i++;  
+			j--;
+		}
+	}
+
+	// Recursive calls 
+	quicksort ( input, left, i-1 );
+	quicksort ( input, i, right );
+}
+

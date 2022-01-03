@@ -1,0 +1,14 @@
+/*
+Linear Search
+Avg. Time complexity: O(n)
+*/
+
+linearSearch ( input, searchValue ) {
+    for ( i = 0  to  input.length - 1 ) {
+        if ( input[ i ] == searchValue )
+            return true
+    }
+
+    return false
+}
+

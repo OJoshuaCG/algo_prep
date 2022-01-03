@@ -1,0 +1,20 @@
+/*
+Selection Sort (Descending)
+Avg. Time complexity: O(n²)
+*/
+
+// Adds sorted numbers to the right end of the array 
+
+for ( i = input.length-1 to i > 0 ) {
+	int minIndex = 0;
+	for ( j = 1 to j <= i ) {
+		if ( input[ j ] < input[ minIndex ] ) {
+			// Set index for smallest element found till now 
+			minIndex = j;
+		}
+	}
+
+	if ( minIndex != i )
+		swap input[ i ] & input[ minIndex ]
+}
+

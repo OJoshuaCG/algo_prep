@@ -1,0 +1,16 @@
+/*
+Tree Traversals 
+In order
+*/
+
+inOrder ( TreeNode node ) {
+    if ( node == null )
+        return
+
+    inOrder ( node.left )
+
+    Print node.value
+    
+    inOrder ( node.right )
+}
+
