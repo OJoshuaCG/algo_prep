@@ -2,7 +2,6 @@
 
 Algoritmos en pseudocodigo
 
----
 
 ## Algoritmos de ordenamiento
 
@@ -16,7 +15,6 @@ Algoritmos en pseudocodigo
 | Quick Sort | $O(n log_n)$ |
 | Merge Sort | $O(n log_n)$ |
 
----
 
 ## Algoritmos de busqueda
 
@@ -26,14 +24,12 @@ Algoritmos en pseudocodigo
 | Jump Search | $O(\sqrt{n})$ |
 | Binary Search | $O(log_n)$ |
 
----
 
 ## Estructuras de datos
 
 - Graph Traversals
 - Tree Traversals
 
----
 
 ## Fuente
 
